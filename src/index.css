@@ -193,7 +193,9 @@ body {
             h2 {
                 @apply text-5xl md:text-6xl font-modern-negra max-w-lg;
             }
-
+            .noisy {
+            @apply absolute inset-0 size-full bg-[url("/images/noise.png")];
+        }
             .sub-content {
                 @apply md:col-span-4 space-y-5 flex flex-col justify-between;
 
@@ -209,6 +211,7 @@ body {
                     }
                 }
             }
+        
         }
 
         .badge {
