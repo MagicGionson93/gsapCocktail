@@ -1,6 +1,6 @@
+import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/all";
-import gsap from "gsap";
 import React, { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 
@@ -11,6 +11,7 @@ const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   useGSAP(() => {
+    document.fonts.ready.then(() => {
     const heroSplit = new SplitText(".title", { type: "chars, words" });
     const paragraphSplit = new SplitText(".subtitle", { type: "lines" });
 
@@ -31,6 +32,7 @@ const Hero = () => {
       stagger: 0.08,
       delay: 1,
     });
+  })
 
     gsap
       .timeline({

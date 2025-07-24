@@ -173,7 +173,7 @@ body {
                     }
 
                     p {
-                        @apply text-sm;
+                        @apply text-xl;
                     }
 
                     span {
