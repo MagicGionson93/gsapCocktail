@@ -89,7 +89,7 @@ const Menu = () => {
               aria-hidden="true"
               className="size-12"
             />
-            <span className="flex items-center hidden sm:block">{prevCocktail.name}</span>
+            <span className="items-center hidden sm:block">{prevCocktail.name}</span>
           </button>
           <button
             className="flex flex-col items-center"
